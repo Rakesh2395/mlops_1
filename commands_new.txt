@@ -1,0 +1,3 @@
+cd C:\mlops_1
+
+az ml job create --file src\job.yml --web --resource-group dd_resourcegrp --workspace-name dev_wokspace01
