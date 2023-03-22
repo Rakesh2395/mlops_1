@@ -15,5 +15,9 @@ jobs:
       uses: azure/login@v1
       with:
         creds: ${{secrets.AZURE_CREDENTIALS}}
+    - name: attach workspace
+      run: az ml folder attach -w dev_wokspace01 -g dd_resourcegrp
+    - name: run ml job
+      run: az ml job create --file src\job.yml --web --resource-group dd_resourcegrp --workspace-name dev_wokspace01
 
 
