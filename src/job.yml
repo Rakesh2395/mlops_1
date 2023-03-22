@@ -12,6 +12,6 @@ inputs:
     path: https://github.com/Rakesh2395/mlops_1/tree/main/experimentation/data/
   reg_rate: 0.01
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
-compute: azureml:devCompIns01
+compute: azureml:computeclust01
 experiment_name: exp01
 description: diabetes dataset-assign2
